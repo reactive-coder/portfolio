@@ -47,8 +47,8 @@ const NavBar: Function = () => {
     return (
         <nav className="font-sans w-full sticky top-0 z-20 before:-z-20 before:bg-black before:opacity-20 before:absolute before:top-0 before:h-full before:w-full text-gray-50">
             <Container>
-                <div className="flex py-6 items-center justify-between">
-                    <span className="text-2xl tracking-wider uppercase">{home.name}</span>
+                <div className="flex py-2 sm:py-4 md:py-6 items-center justify-between">
+                    <span className="text-lg sm:text-xl md:text-2xl tracking-wider uppercase">{home.name}</span>
                     <ul className="hidden lg:block list-none flex">
                         {navData.map((item, i) => (
                             <Link key={i.toString()}
@@ -57,7 +57,7 @@ const NavBar: Function = () => {
                         ))}
                     </ul>
                     <div className="flex items-center">
-                        <button className="bg-white px-4 py-1.5 rounded-3xl text-black">
+                        <button className="text-sm md:text-base bg-white px-4 py-1.5 rounded-3xl text-black">
                             Download CV
                         </button>
                         <FontAwesomeIcon
